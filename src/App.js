@@ -14,13 +14,20 @@ function App() {
   }, [])
   return (
     <div className="App">
-      <Row xs={1} md={2} className="g-4">
-      {
-        news.map(nw=><News news={nw}
-        
-        ></News>)
+      {news.length === 0 ?
+        <Spinner animation="border" /> :
+
+        <Row xs={1} md={3} className="g-4">
+          {
+            news.map(nw => <News news={nw}
+
+            ></News>)
+          }
+        </Row>
       }
-      </Row>
+
+
+
     </div>
   );
 }
