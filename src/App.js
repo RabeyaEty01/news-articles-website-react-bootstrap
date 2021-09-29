@@ -17,7 +17,7 @@ function App() {
       {news.length === 0 ?
         <Spinner animation="border" /> :
 
-        <Row xs={1} md={3} className="g-4">
+        < Row xs={1} md={3} className="g-4">
           {
             news.map(nw => <News news={nw}
 
@@ -28,7 +28,7 @@ function App() {
 
 
 
-    </div>
+    </div >
   );
 }
 
